@@ -22,22 +22,25 @@
     <h2>Hyperparameters</h2>
     <label for="epochs">Epochs:</label>
 
-<input type="range" id="epochs" name="epochs" min="0" max="100" value="50">
-
+<input type="range" id="epochs" name="epochs" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+<output>50</output>
 <br/> <br/>
 
 <label for="learning rate">Learning Rate :</label>
 
-<input type="range" id="learning rate" name="learning rate" min="0" max="100" value="50">
-
+<input type="range" id="learning rate" name="learning rate" min="0" max="1" value="0.005" oninput="this.nextElementSibling.value = this.value">
+<output>0.005</output>
 <br/><br/>
 <label for="hidden layer">Hidden Layer :</label>
 
-<input type="range" id="hidden layer" name="hidden layer" min="0" max="100" value="50">
+<input type="range" id="hidden layer" name="hidden layer" min="0" max="6" value="2" oninput="this.nextElementSibling.value = this.value">
+<output>2</output>
+
 <br/><br/>
 <label for="neurons">Neurons :</label>
 
-<input type="range" id="Neurons" name="Neurons" min="0" max="100" value="50">
+<input type="range" id="Neurons" name="Neurons" min="0" max="512" value="70" oninput="this.nextElementSibling.value = this.value">
+<output>70</output>
 
 
 </body>
